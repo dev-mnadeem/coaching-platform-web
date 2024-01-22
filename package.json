@@ -4,7 +4,7 @@
   "private": true,
   "description": "Coaching platform front end: athlete auth and an AI-assisted weekly session planner.",
   "engines": {
-    "node": ">=18"
+    "node": ">=22"
   },
   "dependencies": {
     "@apollo/client": "^3.8.6",

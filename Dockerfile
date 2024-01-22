@@ -3,7 +3,7 @@
 # ---- Stage 1: build ---------------------------------------------------------
 # Create React App inlines REACT_APP_* values at build time, so configuration has
 # to arrive as build args rather than runtime environment variables.
-FROM node:20-alpine AS build
+FROM node:22-alpine AS build
 
 ARG REACT_APP_GRAPHQL_URI=http://localhost:8000/graphql
 ARG REACT_APP_COACH_API_URL=""
