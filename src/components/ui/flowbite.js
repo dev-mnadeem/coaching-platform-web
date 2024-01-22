@@ -6,15 +6,15 @@
  * Datepicker, Carousel, react-markdown, react-icons and all. Importing the four
  * component folders we actually use keeps that out of the build.
  *
- * The trade-off is that these are deep paths into the package's build output, so
- * they are version-sensitive. Keeping them in one file means a flowbite-react
- * upgrade is a single edit rather than a repo-wide search.
+ * Public component exports keep the production bundle focused on these controls.
+ * Jest 27 resolves the same components through their CommonJS counterparts via
+ * the package's moduleNameMapper, since it does not resolve wildcard exports.
  */
-export { Badge } from "flowbite-react/lib/esm/components/Badge";
-export { Button } from "flowbite-react/lib/esm/components/Button";
-export { Flowbite } from "flowbite-react/lib/esm/components/Flowbite";
-export { Label } from "flowbite-react/lib/esm/components/Label";
-export { Modal } from "flowbite-react/lib/esm/components/Modal";
-export { Select } from "flowbite-react/lib/esm/components/Select";
-export { Spinner } from "flowbite-react/lib/esm/components/Spinner";
-export { TextInput } from "flowbite-react/lib/esm/components/TextInput";
+export { Badge } from "flowbite-react/components/Badge";
+export { Button } from "flowbite-react/components/Button";
+export { Flowbite } from "flowbite-react/components/Flowbite";
+export { Label } from "flowbite-react/components/Label";
+export { Modal } from "flowbite-react/components/Modal";
+export { Select } from "flowbite-react/components/Select";
+export { Spinner } from "flowbite-react/components/Spinner";
+export { TextInput } from "flowbite-react/components/TextInput";

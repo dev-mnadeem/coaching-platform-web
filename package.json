@@ -90,7 +90,7 @@
       }
     },
     "moduleNameMapper": {
-      "^flowbite-react/lib/esm/(.*)$": "<rootDir>/node_modules/flowbite-react/lib/cjs/$1"
+      "^flowbite-react/components/(.*)$": "<rootDir>/node_modules/flowbite-react/lib/cjs/components/$1"
     }
   },
   "browserslist": {

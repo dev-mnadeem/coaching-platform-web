@@ -60,3 +60,7 @@ The `Dockerfile` builds with Node 20 and serves the bundle from nginx on port 80
 - Auth tokens are kept in `localStorage` and the refresh token is never used, so an expired token just signs you out.
 - The mutations have only been tested against a mocked Apollo link, not a live server.
 - The built-in planner is template based and doesn't know about injuries or equipment.
+
+## Author
+
+[**Muhammad Nadeem**](https://github.com/dev-mnadeem)
